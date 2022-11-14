@@ -30,6 +30,8 @@
 body{
     background-color: var(--cor1);
     font-family: var(--fonte_padrao);
+    transition-duration: 0.5s;
+
 }
 a.externo::after{
     content: '\00a0\1F517';
@@ -45,7 +47,7 @@ header{
 header > h1{
     color: white;
     font-family: var(--fonte_destaque);
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     font-size: 3em;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
     font-weight: normal;
@@ -70,6 +72,7 @@ nav{
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.486);
 }
 nav>a{
+    text-transform: capitalize;
     border-radius: 5px;
     padding: 10px;
     text-decoration: none;
@@ -77,7 +80,6 @@ nav>a{
     color: white;
 }
 nav>a:hover{
-    transition-duration: 0.5s;
     background-color: var(--cor3);
     color: var(--cor5);
 }
