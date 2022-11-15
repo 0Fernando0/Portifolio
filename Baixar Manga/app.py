@@ -31,5 +31,5 @@ def app():
                 file.write(requests.get(link).content)          
                
         nav.close() 
-
-app()
+if __name__ == "__main__":
+    app()
