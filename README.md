@@ -9,5 +9,5 @@ Portfólio com meus projetos
 </p>
 
 <p>
-<a href="Corseu/index.html">Meu Curriculo</a>
+<a href="Corseu/index.html">Corseu</a>
 </p>
