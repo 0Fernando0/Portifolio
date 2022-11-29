@@ -9,5 +9,5 @@ Portfólio com meus projetos
 </p>
 
 <p>
-<a href="Corseu/index.html">Corseu</a>
+<a href="Cordel/index.html">Cordel</a>
 </p>
