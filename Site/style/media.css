@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media screen and (max-width:600px) {
+    span.material-symbols-outlined{
+        display: block;
+        text-align: center;
+        background: #063d1e;
+        color: white;
+        cursor: pointer;
+        padding-top: 10px;
+    }
+    nav{
+        display: none;
+    }
+    nav > a{
+        display: block;
+        text-align: center;
+    }
+}

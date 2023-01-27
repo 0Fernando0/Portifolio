@@ -66,6 +66,10 @@ header > p{
 
 }
 
+span.material-symbols-outlined{
+    display: none;
+}
+
 nav{
     background-color: var(--cor6);
     padding: 10px;
