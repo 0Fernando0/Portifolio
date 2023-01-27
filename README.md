@@ -13,5 +13,5 @@ Portfólio com meus projetos
 </p>
 
 <p>
-<a href="Tela Login/index.html">Cordel</a>
+<a href="Tela Login/index.html">Login</a>
 </p>
