@@ -30,7 +30,7 @@ grandes telas: acima de 1200px
 
 }
 
-@media screen and (min-width:992px) and (max-width:1200px) {
+@media screen and (min-width:992px){
     /* DESKTOP */
     body{
         background: linear-gradient(to top,var(--cor1),var(--cor2));
@@ -50,10 +50,3 @@ grandes telas: acima de 1200px
 
 }
 
-@media screen and (min-width:1200px){
-    /* TELAS GRANDES */
-    body{
-        background: linear-gradient(to top,var(--cor1),var(--cor2));
-    }
-
-}
