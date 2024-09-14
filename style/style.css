@@ -228,7 +228,6 @@ section.project img{
 
 section.project div{
     width: 200px;
-    height: 200px;
     background-color: var(--cor2);
     border-radius: 10px;
     overflow: hidden;
