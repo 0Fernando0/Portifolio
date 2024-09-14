@@ -5,5 +5,13 @@ function alterar(){
 }
 
 document.body.onload = function(){
-    document.querySelector("header>nav").style.display = "none";
+    if(window.innerWidth < 668){
+        nav.style.display = "none";
+    }
+}
+
+document.body.onresize = function(){
+    if(window.innerWidth > 668){
+        nav.style.display = "flex";
+    }
 }
