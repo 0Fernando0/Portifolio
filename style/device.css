@@ -78,7 +78,7 @@ section.about p{
 }
 
 section.about div.imagem{
-    border-radius: 0px;
+    height: 255px;  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,9 +90,6 @@ section.about div.imagem:hover{
     box-shadow: 0px 5px 5px var(--cor2);
 }
 
-section.about img{
-    height: 255px;
-}
 
 section.about button{
     align-self: flex-start;
@@ -114,6 +111,7 @@ section.project h2{
 }
 
 section.project div{
+    transition: .5s;
 }
 
 
