@@ -6,27 +6,22 @@
     <title>Portfólio | Fernando Borges</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/animation.css">
 </head>
 <body>
     <header>
-
-        <div class="header-nav">
-            <div class="header-nav-menu">
-                <h1>Portfólio</h1>
-                <span id="menu" onclick="alterar()" class="material-symbols-outlined">menu</span>
-            </div>
-            <nav id="navigation">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-        <hr>
-        <div class="header-email">
+        <h1>Portfólio</h1>
+        <span id="menu" onclick="alterar()" class="material-symbols-outlined">menu</span>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Projects</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="email">
             <p>hi, my name is</p>
             <p class="name">Fernando Borges</p>
             <p>Front-End Developer</p>
@@ -34,7 +29,7 @@
                 <input type="email" name="email" id="email" placeholder="Enter your E-mail">
                 <input type="submit" value="Send">
             </form>
-            <div class="social">
+            <nav class="social">
                 <a href="#">
                     <img src="icon/github-logo.png" alt="icon github">
                 </a>
@@ -44,12 +39,10 @@
                 <a href="#">
                     <img src="icon/instagram.png" alt="icon instagram">
                 </a>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section>
-            <img src="#" alt="foto de perfil">
+            </nav>
+        </section>
+        <section class="about">
+            <div class="imagem"></div>
             <article>
                 <h2>About Me</h2>
                 <p>
@@ -58,35 +51,54 @@
                 <button>DOWNLOAD CV</button>
             </article>
         </section>
-        <section>
+        <section class="project">
             <h2>Projects</h2>
             <div></div>
             <div></div>
             <div></div>
         </section>
-        <section>
+        <section class="skill">
             <h2>Skills</h2>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div>
+                <span>HTML 5</span>
+                <img src="icon/html-5.png" alt="html5 icon">
+            </div>
+            <div>
+                <span>CSS 3</span>
+                <img src="icon/css-3.png" alt="css3 icon">
+            </div>
+            <div>
+                <span>JAVASCRIPT</span>
+                <img src="icon/js.png" alt="javascript icon">
+            </div>
+            <div>
+                <span>GIT</span>
+                <img src="icon/git.png" alt="git icon">
+            </div>
         </section>
-        <section>
+        <section class="contact">
             <h2>Contact</h2>
             <form>
-                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
                 <input type="email" name="email2" id="email2" placeholder="E-Mail">
-                <textarea name="msg" id="msg"></textarea>
+                <textarea name="msg" id="msg" rows="5"></textarea>
                 <input type="submit" value="Send-Me">
             </form>
         </section>
     </main>
     <footer>
         <p>acess my github for more project.</p>
-        <div>
-            <a href="#">github</a>
-            <a href="#">linkedin</a>
-            <a href="#">insta</a>
-        </div>
+        <nav class="social">
+            <a href="#">
+                <img src="icon/github-logo.png" alt="icon github">
+            </a>
+            <a href="#">
+                <img src="icon/linkedin.png" alt="icon linkedin">
+            </a>
+            <a href="#">
+                <img src="icon/instagram.png" alt="icon instagram">
+            </a>
+        </nav>
         <p>&copy; Copyright By 0Fernando0</p>
     </footer>
     <script src="logic.js"></script>
