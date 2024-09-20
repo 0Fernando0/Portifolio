@@ -20,10 +20,12 @@
     --font-title: "Montserrat", system-ui;
     --font-content: "Roboto", sans-serif;
 
-    --cor1: #001021;
+    /* --cor1: #001021; */
+    --cor1: #7166e9;
     --cor2: #574AE2;
     --cor3: white;
     --cor4: black;
+    --teste: #7166e9;
 
     --medium-radius: 10px;
     --hard-radius: 20px;
