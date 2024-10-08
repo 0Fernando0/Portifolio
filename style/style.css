@@ -21,7 +21,7 @@
     --font-content: "Roboto", sans-serif;
 
     /* --cor1: #001021; */
-    --cor1: #7166e9;
+    --cor1: #241e66;
     --cor2: #574AE2;
     --cor3: white;
     --cor4: black;
@@ -205,6 +205,7 @@ section.about p{
 }
 
 section.about button{
+    width: 100%;
     border: 2px solid var(--cor2);
     color: var(--cor3);
     border-radius: 10px;
