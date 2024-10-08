@@ -1,0 +1,11 @@
+@mixin colorBox($time){
+    @keyframes colorbox {
+        0%,100%{
+            color: $color_secundary;
+        }
+        50%{
+            color: #7168df;
+        }
+    }
+    animation: colorbox $time infinite ease-in-out;
+}

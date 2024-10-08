@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Montserrat", system-ui;
+    src: url("../font/montserrat_regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url("../font/roboto_regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+$small_padding: 10px;
+
+
+$small_radious: 8px;
+
+
+$color_primary: #001021;
+$color_secundary: #574AE2;
+$color_content1: white;
+$color_content2: black;
+
+$font_title: "Montserrat", system-ui;
+$font_content: "Roboto", sans-serif;

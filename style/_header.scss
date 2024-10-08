@@ -1,0 +1,35 @@
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        cursor: pointer;
+        &:hover{
+            color: $color_secundary;
+        }
+        transition: 1s;
+
+    }
+    
+    nav{
+        padding-top: $small_padding;
+        flex-basis: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding: $small_padding;
+        border-bottom: 1px solid $color_secundary;
+        a{
+            padding: $small_padding;
+            width: 100%;
+            text-align: center;
+            border-radius: $small_radious;
+            &:hover{
+                color: $color_secundary;
+                background-color: $color_content1;
+            }
+            transition: 1s;
+        }
+    }
+}
