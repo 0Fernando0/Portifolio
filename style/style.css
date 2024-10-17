@@ -122,7 +122,6 @@ section.banner{
         flex-shrink: 1;
         width: 500px;
     }
-    display: none;
 }
 
 article h2{
@@ -171,7 +170,6 @@ section.sobre{
             height: 50px;
         }
     }
-    display: none;
 }
 
 ul{
@@ -210,7 +208,6 @@ section#portifolio{
     span:hover{
         color: var(--color-primary);
     }
-    display: none;
 }
 
 section#servico{
@@ -231,7 +228,6 @@ section#servico{
             text-align: justify;
         }
     }
-    display: none;
 }
 
 section#skill{
@@ -259,4 +255,73 @@ section#skill{
     figcaption{
         text-align: center;
     }
+}
+
+
+
+section#contato{
+    height: 100dvh;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    align-content: space-evenly;
+
+    h2{
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    li{
+        gap: 15px;
+        display: flex;
+        align-items: center;
+    }
+    img{
+        width: 50px;
+    }
+
+    input,textarea{
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        padding-left: 5px;
+        font-size: 1em;
+        height: 50px;
+        background-color: var(--color-background);
+    }
+    textarea{        
+        height: 150px;
+        padding-top: 5px;
+    }
+    button{
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        height: 50px;
+        font-size: 1em;
+        color: white;
+        background-color: var(--color-background);
+    }
+    form{
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        width: 400px;
+        padding: 20px 10px;
+        background-image: linear-gradient(to right, var(--color-primary), var(--color-secundary));
+        border-radius: 8px;
+    }
+}
+
+footer{
+    text-align: center;
+    height: 50px;
 }
