@@ -42,6 +42,7 @@ svg{
 }
 
 .grandient{
+    cursor: pointer;
     color: white;
     transition: 1s;
     background-image: linear-gradient(to right , var(--color-primary), var(--color-secundary));
@@ -124,6 +125,31 @@ article h2{
 
 
 section.sobre{
+    height: 100dvh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div{
+        border: 9px solid var(--color-primary);
+        width: 200px;
+        height: 300px;
+        border-radius: 8px;
+        position: relative;
+    }
+    img{
+        transition: .3s;
+        border-radius: 8px;
+        position: absolute;
+        top: -25px;
+        left: -25px;
+        height: 100%;
+        width: 100%;
+        &:hover{
+            border-radius: 0px;
+            top: 0px;
+            left: 0px;
+        }
+    }
     article{
         padding: 8px;
         width: 400px;
@@ -133,6 +159,9 @@ section.sobre{
         p{
             font-family: var(--font-content);
             text-align: justify;
+        }
+        button{
+            height: 50px;
         }
     }
 }
