@@ -61,7 +61,11 @@ svg{
     font-size: 1em;
 }
 
-header{
+header{    
+    position: sticky;
+    top: 0px;
+    opacity: .9;
+    background-color: var(--color-background);
     padding: 50px;
     display: flex;
     justify-content: space-between;
@@ -140,14 +144,11 @@ section.sobre{
         width: 200px;
         height: 300px;
         border-radius: 8px;
-        position: relative;
     }
     img{
         transition: .3s;
         border-radius: 8px;
-        position: absolute;
-        top: -25px;
-        left: -25px;
+        /* transform: translateX(-25px) translateY(-25px); */
         height: 100%;
         width: 100%;
         &:hover{
