@@ -231,5 +231,32 @@ section#servico{
             text-align: justify;
         }
     }
+    display: none;
 }
 
+section#skill{
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+
+    h2{
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+    figure{
+        border: 1px solid var(--color-secundary);
+        border-radius: 8px;
+        width: 200px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    figcaption{
+        text-align: center;
+    }
+}
