@@ -39,13 +39,13 @@ header{
         grid-template-columns: repeat(2,auto);
         justify-content: space-between;
         align-content: center;
-
+        padding-bottom: 50px;
         nav{
+            grid-column: 1 / -1;
             display: none;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            grid-column: 1 / -1;
         }
         img{
             display: block;
