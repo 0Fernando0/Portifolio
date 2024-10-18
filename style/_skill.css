@@ -1,0 +1,42 @@
+section#skill{
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+
+    h2{
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+    figure{
+        border: 1px solid var(--color-secundary);
+        border-radius: 8px;
+        width: 200px;
+        height: 170px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    figcaption{
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 950px) {
+        grid-template-columns: repeat(2,auto);
+        justify-items: center;
+    }
+    @media only screen and (max-width: 500px) {
+
+        & figure{
+            width: 150px;
+            height: 120px;
+        }
+
+        & img{
+            width: 70px;
+        }
+    }
+}

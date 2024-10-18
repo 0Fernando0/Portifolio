@@ -9,13 +9,14 @@
 <body>
     <header>
         <h1><span>&lt;/</span> Fernando B Pereira <span>&gt;</span></h1>
+        <img onclick="setMenu()" src="imagens/menu.png" alt="icone menu">
         <nav>
-            <a href="#">Home</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#portifolio">Portfólio</a>
-            <a href="#servico">Serviços</a>
-            <a href="#skill">Skills</a>
-            <a href="#contato" class="grandient">Contatos</a>
+            <a onclick="screenScrol(this)" href="#">Home</a>
+            <a onclick="screenScrol(this)" href="#sobre">Sobre</a>
+            <a onclick="screenScrol(this)" href="#portifolio">Portfólio</a>
+            <a onclick="screenScrol(this)" href="#servico">Serviços</a>
+            <a onclick="screenScrol(this)" href="#skill">Skills</a>
+            <a onclick="screenScrol(this)" href="#contato" class="grandient">Contatos</a>
         </nav>
     </header>
     <main>
@@ -64,7 +65,7 @@
         <section id="servico">
             <h2>Serviços</h2>
             <article>
-                <h3>Desenvolvimento de Sites</h3>
+                <h3><img src="imagens/intenet.png" alt="icone internet">  Desenvolvimento de Sites</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga placeat, natus voluptates alias ullam laboriosam asperiores ex cupiditate laudantium, sequi enim aspernatur, quod earum distinctio unde sint atque ratione omnis!
                 </p>
@@ -118,5 +119,6 @@
     <footer>
         <p>&copy; 2024 - criado por 0Fernado0</p>
     </footer>
+    <script src="logic.js"></script>
 </body>
 </html>
