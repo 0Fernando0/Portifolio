@@ -1,5 +1,6 @@
 header{    
     position: sticky;
+    z-index: 1;
     top: 0px;
     opacity: .9;
     background-color: var(--color-background);
@@ -30,7 +31,7 @@ header{
             }
         }
     }
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 952px) {
         display: grid;
         padding: 25px;
         gap: 15px;

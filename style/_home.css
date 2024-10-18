@@ -36,8 +36,14 @@ section.banner{
     img{
         width: 500px;
         /* tablet */
-        @media only screen and (max-width: 950px) and (min-width: 400px) {
+        @media only screen and (max-width: 1020px) {
             width: 300px;
         }
+    }
+    @media only screen and (max-width: 950px) {
+        flex-direction: row-reverse;
+    }
+    @media only screen and (max-width: 692px) {
+        flex-direction: column;
     }
 }

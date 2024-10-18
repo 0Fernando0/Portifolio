@@ -59,15 +59,12 @@ a{
     font-size: 1em;
 }
 
-
-
 main{
     padding: 0px 50px;
     @media only screen and (min-width: 400px) and (max-width: 950px) {
         padding: 0px 25px;
     }
 }
-
 
 ul{
     list-style: none;
@@ -76,4 +73,8 @@ ul{
 footer{
     text-align: center;
     height: 50px;
+}
+
+section:not(:first-child){
+    display: none !important; 
 }
