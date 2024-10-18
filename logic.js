@@ -1,3 +1,13 @@
+let menu = document.querySelector("header>nav");
+
+function setDisplayMenu(){
+    if(window.innerWidth >= 952){
+        menu.style.display = "flex";
+    }else{
+        menu.style.display = "none";
+    }
+}
+
 function screenScrol(item){
     const navLinks = document.querySelectorAll("nav>a");
     navLinks.forEach((elem) => {
@@ -7,7 +17,6 @@ function screenScrol(item){
 }
 
 function setMenu(){
-    let menu = document.querySelector("header>nav");
     menu.style.display = menu.style.display == "none" ? "flex" : "none";
 }
 
