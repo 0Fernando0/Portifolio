@@ -32,12 +32,15 @@ section#skill{
     @media only screen and (max-width: 500px) {
 
         & figure{
-            width: 150px;
-            height: 120px;
+            width: 120px;
+            height: 90px;
         }
 
         & img{
-            width: 70px;
+            width: 50px;
+        }
+        & figcaption{
+            font-size: .8em;
         }
     }
 }

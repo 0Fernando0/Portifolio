@@ -21,13 +21,13 @@ section.sobre{
         display: flex;
         flex-direction: column;
         gap: 15px;
-        p{
-            font-family: var(--font-content);
-            text-align: justify;
-        }
-        button{
-            height: 50px;
-        }
+    }
+    button{
+        height: 50px;
+    }
+    p{
+        font-family: var(--font-content);
+        text-align: justify;
     }
     /* para tablet */
     @media only screen and (max-width: 900px) {
@@ -42,6 +42,11 @@ section.sobre{
             &:hover{
                 transform: none;
             }
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        p{
+            font-size: .8em;
         }
     }
 }

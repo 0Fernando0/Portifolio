@@ -1,49 +1,55 @@
-section#portifolio{
+#portifolio{
     display: flex;
     flex-direction: column;
     h2{
         text-align: center;
     }
-    div{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        height: 100dvh;
+}
+
+.projeto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100dvh;
+}
+
+.projeto h3{
+    color: var(--color-primary);
+}
+
+.projeto article{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+}
+
+.projeto:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 900px) {
+    .projeto img{
+        width: 250px;
     }
-    article{
-        flex-basis: 400px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-    h3{
-        color: var(--color-primary);
-    }
-    span{
-        transition: .3s;
-        &:hover{
-            color: var(--color-primary);
-        }
-    }
-    div:nth-child(3){
+    .projeto{
         flex-direction: row-reverse;
+        gap: 50px;
+    }
+    .projeto:nth-child(odd){
+        flex-direction: row;
     }
 }
 
-@media only screen and (max-width: 820px) {
-    section#portifolio{
-        gap: 80px;
-        img{
-            width: 200px;
-        }
-        article{
-            width: 300px;
-        }
-        div:is(:nth-child(3), :nth-child(even)){
-            justify-content: center;
-            align-items: center;
-            flex-direction: column-reverse;
-            gap: 50px;
-        }
+@media screen and (max-width: 600px) {
+    #portifolio{
+        gap: 100px;
     }
+    .projeto{
+        height: max-content;
+    }
+    .projeto:is(:nth-child(odd),:nth-child(even)){
+        flex-direction: column-reverse;
+    }
+    
 }

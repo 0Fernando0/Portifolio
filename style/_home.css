@@ -19,14 +19,6 @@ section#home{
         gap: 15px;
         font-family: var(--font-title);
 
-        h2{
-            color: var(--color-primary);
-        }
-        button{
-            height: 50px;
-            font-size: 1em;
-            color: white;
-        }
         /* tablet */
         @media only screen and (max-width: 950px) and (min-width: 400px) {
             & h2{
@@ -34,6 +26,14 @@ section#home{
             }
             
         }
+    }
+    button{
+        height: 50px;
+        font-size: 1em;
+        color: white;
+    }
+    h2{
+        color: var(--color-primary);
     }
     img{
         width: 500px;
@@ -45,7 +45,19 @@ section#home{
     @media only screen and (max-width: 950px) {
         flex-direction: row-reverse;
     }
-    @media only screen and (max-width: 692px) {
+    @media only screen and (max-width: 700px) {
         flex-direction: column;
+        h2{
+            font-size: 1em;
+        }
+        p{
+            font-size: .8em;
+        }
+        img{
+            width: 200px;
+        }
+        button{
+            font-size: .8em;
+        }
     }
 }

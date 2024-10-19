@@ -25,6 +25,9 @@ h1,h2,h3{
 body{
     background-color: var(--color-background);
     color: white;
+    @media screen and (max-width: 400px) {
+        overflow-x: hidden;
+    }
 }
 
 a{
@@ -54,7 +57,7 @@ a{
 main{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 100px;
     padding: 0px 50px;
     @media only screen and (min-width: 400px) and (max-width: 950px) {
         padding: 0px 25px;
