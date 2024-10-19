@@ -4,6 +4,7 @@ section.banner{
     gap: 15px;
     justify-content: space-around;
     align-items: center;
+    height: 100dvh;
 
     article{
         max-width: max-content;
