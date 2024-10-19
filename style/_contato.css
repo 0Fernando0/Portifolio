@@ -35,7 +35,8 @@ section#contato{
         height: 50px;
         background-color: var(--color-background);
     }
-    textarea{        
+    textarea{     
+        color: white;   
         height: 150px;
         padding-top: 5px;
     }
