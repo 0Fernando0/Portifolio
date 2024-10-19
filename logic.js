@@ -8,13 +8,6 @@ function setDisplayMenu(){
     }
 }
 
-function screenScrol(item){
-    const navLinks = document.querySelectorAll("nav>a");
-    navLinks.forEach((elem) => {
-        elem.classList.remove("active");
-    })
-    item.classList.add("active")
-}
 
 function setMenu(){
     menu.style.display = menu.style.display == "none" ? "flex" : "none";

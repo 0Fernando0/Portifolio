@@ -27,9 +27,6 @@ header{
             display: flex;
             align-items: center;
             gap: 5px;
-            &.active{
-                color: var(--color-primary);
-            }
         }
     }
     @media only screen and (max-width: 952px) {
