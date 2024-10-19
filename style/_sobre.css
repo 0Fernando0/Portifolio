@@ -31,10 +31,17 @@ section.sobre{
     }
     /* para tablet */
     @media only screen and (max-width: 900px) {
+        height: max-content;
         flex-flow: row-reverse wrap;
         gap: 30px;
         article{
             max-width: 300px;
+        }
+        img{
+            box-shadow: none;
+            &:hover{
+                transform: none;
+            }
         }
     }
 }
