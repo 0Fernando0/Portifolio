@@ -25,6 +25,7 @@ section#skill{
     }
 
     @media only screen and (max-width: 950px) {
+        height: max-content;
         grid-template-columns: repeat(2,auto);
         justify-items: center;
     }
