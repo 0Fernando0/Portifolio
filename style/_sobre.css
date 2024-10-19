@@ -29,4 +29,12 @@ section.sobre{
             height: 50px;
         }
     }
+    /* para tablet */
+    @media only screen and (max-width: 900px) {
+        flex-flow: row-reverse wrap;
+        gap: 30px;
+        article{
+            max-width: 300px;
+        }
+    }
 }

@@ -75,6 +75,6 @@ footer{
     height: 50px;
 }
 
-section:not(:first-child){
+section:not(:nth-child(3)){
     display: none !important; 
 }
