@@ -71,4 +71,19 @@ section#contato{
         }
         padding-bottom: 30px;
     }
+    @media only screen and (max-width: 580px){
+        display: flex;
+        flex-direction: column;
+        ul{
+            gap: 5px;
+            width: 200px;
+        }
+        li{
+            gap: 3px;
+            font-size: .8em;
+        }
+        form{
+            width: 250px;
+        }
+    }
 }

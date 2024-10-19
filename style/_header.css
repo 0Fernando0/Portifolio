@@ -2,7 +2,7 @@ header{
 
     position: sticky;
     z-index: 1;
-    top: 0px;
+    top: -1px;
     opacity: .9;
     background-color: var(--color-background);
     display: flex;
@@ -49,5 +49,11 @@ header{
             cursor: pointer;
         }
 
+    }
+    @media screen and (max-width: 500px) {
+        h1{
+            font-size: .7em;
+        }
+        padding: 15px;
     }
 }
