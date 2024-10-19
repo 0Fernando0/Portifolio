@@ -60,9 +60,6 @@ a{
 }
 
 main{
-    section{
-        border: 1px solid white;
-    }
     display: flex;
     flex-direction: column;
     gap: 50px;
