@@ -15,6 +15,15 @@ section#servico{
         p{
             text-align: justify;
         }
+        @media screen and (max-width: 600px) {
+            max-width: 90%;
+            h3{
+                font-size: 1em;
+            }
+            p{
+                font-size: .8em;
+            }
+        }
     }
     h3{
         display: flex;

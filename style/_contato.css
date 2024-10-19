@@ -57,13 +57,17 @@ section#contato{
         background-image: linear-gradient(to right, var(--color-primary), var(--color-secundary));
         border-radius: 8px;
     }
-    @media only screen and (max-width: 950px) and (min-width: 400px) {
-        justify-content: space-evenly;
-        form{
-            width: 300px;
-        }
+
+    @media only screen and (max-width: 900px){
+        height: max-content;
+        grid-template-columns: auto;
+        gap: 30px;
         img{
             width: 30px;
         }
+        form{
+            max-width: 350px;
+        }
+        padding-bottom: 30px;
     }
 }
