@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 100dvh;
+    min-height: 100dvh;
 }
 
 .projeto h3{
@@ -55,7 +55,6 @@
     }
     .projeto{
         flex-direction: row-reverse;
-        gap: 50px;
     }
     .projeto:nth-child(odd){
         flex-direction: row;
@@ -64,12 +63,6 @@
 
 /* celular em pé */
 @media screen and (max-width: 600px) and (orientation: portrait) {
-    #portifolio{
-        gap: 100px;
-    }
-    .projeto{
-        height: max-content;
-    }
     .projeto:is(:nth-child(odd),:nth-child(even)){
         flex-direction: column-reverse;
     }

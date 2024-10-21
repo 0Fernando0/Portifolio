@@ -72,7 +72,7 @@ footer{
     text-align: center;
     height: 50px;
 }
-/* 
-section:not(:nth-child(3)){
-    display: none !important; 
-} */
+
+section{
+    min-height: 100dvh !important;
+}

@@ -1,5 +1,4 @@
 section.sobre{
-    height: 100dvh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -31,7 +30,6 @@ section.sobre{
     }
     /* para tablet */
     @media only screen and (max-width: 900px) {
-        height: max-content;
         flex-flow: row-reverse wrap;
         gap: 30px;
         article{
@@ -46,7 +44,7 @@ section.sobre{
     }
     @media only screen and (max-width: 600px) {
         p{
-            font-size: .8em;
+            font-size: .9em;
         }
     }
 }

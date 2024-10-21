@@ -1,5 +1,4 @@
 section#skill{
-    height: 100dvh;
     display: grid;
     grid-template-columns: repeat(3,auto);
     gap: 20px;
@@ -26,7 +25,6 @@ section#skill{
 
     /* tablet */
     @media only screen and (max-width: 950px) {
-        height: max-content;
         grid-template-columns: repeat(2,auto);
         justify-items: center;
     }
