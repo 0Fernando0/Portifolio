@@ -24,12 +24,15 @@ section#skill{
         text-align: center;
     }
 
+    /* tablet */
     @media only screen and (max-width: 950px) {
         height: max-content;
         grid-template-columns: repeat(2,auto);
         justify-items: center;
     }
-    @media only screen and (max-width: 500px) {
+
+    /* celular em pé */
+    @media only screen and (max-width: 600px) and (orientation: portrait) {
 
         & figure{
             width: 120px;
@@ -41,6 +44,17 @@ section#skill{
         }
         & figcaption{
             font-size: .8em;
+        }
+    }
+    /* celular deitado */
+    @media only screen and (max-width: 600px) and (orientation: landscape) {
+        grid-template-columns: repeat(3,auto);
+        & figure{
+            width: 120px;
+            height: 90px;
+        }
+        & img{
+            width: 50px;
         }
     }
 }

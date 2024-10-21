@@ -17,10 +17,30 @@
     color: var(--color-primary);
 }
 
+.projeto span{
+    cursor: pointer;
+    width: max-content;
+    position: relative;
+    &::before{
+        transition: .3s;
+        border-radius: 8px;
+        position: absolute;
+        content: " ";
+        bottom: -3px;
+        width: 0%;
+        height: 3px;
+        background-color: var(--color-primary); 
+    }
+    &:hover::before{
+        width: 100%;
+    }
+}
+
+
 .projeto article{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
     width: 300px;
 }
 
@@ -28,6 +48,7 @@
     flex-direction: row-reverse;
 }
 
+/* tablet */
 @media screen and (max-width: 900px) {
     .projeto img{
         width: 250px;
@@ -41,7 +62,8 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+/* celular em pé */
+@media screen and (max-width: 600px) and (orientation: portrait) {
     #portifolio{
         gap: 100px;
     }
@@ -51,5 +73,25 @@
     .projeto:is(:nth-child(odd),:nth-child(even)){
         flex-direction: column-reverse;
     }
-    
+    .projeto img{
+        width: 200px;
+    }
+    .projeto article{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    .projeto img{
+        width: 150px;
+    }
+    .projeto h3{
+        font-size: 1em;
+    }
+    .projeto p{
+        font-size: .8em;
+    }
+    figure > figcaption{
+        font-size: .8em;
+    }
 }
