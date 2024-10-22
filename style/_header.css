@@ -28,6 +28,9 @@ header{
             align-items: center;
             gap: 5px;
         }
+        a.visible{
+            color: var(--color-primary);
+        }
     }
     @media only screen and (max-width: 952px) {
         display: grid;
