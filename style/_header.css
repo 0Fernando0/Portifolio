@@ -17,6 +17,7 @@ header{
     }
     img{
         display: none;
+        width: 24px;
     }
     div{
         flex-basis: 100%;
@@ -57,9 +58,6 @@ header{
             grid-column: 1 / -1;
         }
 
-        div img{
-            transform: translateX(4px);
-        }
 
         h1{
             grid-row: 2 / 3;

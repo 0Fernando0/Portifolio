@@ -50,15 +50,17 @@ animationObserver()
 
 function switchTheme(){
     const img_theme = document.getElementById("theme");
-    const img_menu = document.querySelector("header img")
+    const img_menu = document.querySelector("header h1+img");
     const theme = document.querySelector("html");
     
     if(theme.getAttribute("data-theme") == "dark"){
         theme.setAttribute("data-theme","light")
         img_theme.setAttribute("src","imagens/moon.png")
+        img_menu.setAttribute("src","imagens/menu-dark.png")
     }
     else{
         theme.setAttribute("data-theme","dark")
         img_theme.setAttribute("src","imagens/sun.png")
+        img_menu.setAttribute("src","imagens/menu.png")
     }
 }
