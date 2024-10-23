@@ -2,6 +2,13 @@ let menu = document.querySelector("header>nav");
 let links_navegacao = document.querySelectorAll("nav>a");
 let sections = document.querySelectorAll("section");
 
+
+let resizeTimeout;
+window.addEventListener("resize", function() {
+    this.clearTimeout(resizeTimeout);
+    resizeTimeout = this.setTimeout(setDisplayMenu,200)
+})
+
 function setDisplayMenu(){
     if(window.innerWidth >= 952){
         menu.style.display = "flex";
