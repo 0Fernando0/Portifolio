@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+/* variaveis dos themas claros */
 :root{
     --color-primary: #69E5E5;
     --color-secundary: #0C7489;
@@ -9,6 +10,21 @@
 
     --font-title: "JetBrains Mono", serif;  
     --font-content: "Inter", serif;
+}
+
+/* variaveis dos themas escuros */
+[data-theme=light]{
+    --color-primary: #007A7A;
+    --color-secundary: #97CAD2;
+    --color-background: #F0F4F8;
+
+    *, #contato :is(input,textarea,button){
+        color: black;
+    }
+    header span{
+        color: var(--color-primary);
+    }
+
 }
 
 *{
