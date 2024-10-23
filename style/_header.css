@@ -1,4 +1,5 @@
 header{
+    display: none !important;
 
     position: sticky;
     z-index: 1;
