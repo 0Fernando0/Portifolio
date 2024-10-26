@@ -71,3 +71,8 @@ function switchTheme(){
         img_menu.setAttribute("src","imagens/menu.png")
     }
 }
+
+
+document.body.onload = () => {
+    document.querySelector("textarea").textContent = ""
+}
