@@ -18,6 +18,10 @@ section#skill{
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        transition: .3s;
+        &:hover{
+            color: var(--color-primary);
+        }
     }
     figcaption{
         text-align: center;
