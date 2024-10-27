@@ -21,8 +21,11 @@ section.sobre{
         flex-direction: column;
         gap: 15px;
     }
-    button{
+    a{
         height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     p{
         font-family: var(--font-content);
